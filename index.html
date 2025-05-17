@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TOURX</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TourX</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(#0b0c2a, #0b0c2a) no-repeat center center fixed;
-      background-image: url('bg-stars.png'); /* use your background starry image */
-      background-size: cover;
+      background: linear-gradient(to bottom, #0f052c, #16034a);
       color: white;
       text-align: center;
+      background-image: url('https://i.ibb.co/VmTzLw8/star-bg.png'); /* use your starry bg image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-    .container {
-      padding: 60px 20px;
-    }
+
     .logo {
-      width: 100px;
-      margin: 0 auto;
+      margin-top: 50px;
     }
-    h1 {
-      font-size: 36px;
-      font-weight: 900;
-      margin-top: 20px;
-    }
-    h1 span {
-      color: #00d0ff;
-    }
-    p {
-      font-size: 18px;
-      margin: 20px 0;
-    }
-    .download-btn {
-      background-color: #00d0ff;
-      color: black;
+
+    .title {
+      font-size: 2.5em;
       font-weight: bold;
-      padding: 15px 30px;
+      margin: 10px 0;
+    }
+
+    .title span {
+      color: #00cfff;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .download-btn {
+      background-color: #00cfff;
+      padding: 15px 40px;
       border: none;
       border-radius: 30px;
-      font-size: 18px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: black;
       cursor: pointer;
-      box-shadow: 0 0 15px #00d0ff80;
+      box-shadow: 0 0 15px rgba(0, 207, 255, 0.7);
+      margin-bottom: 40px;
     }
+
     .icons {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 500px;
-      margin: 60px auto 0;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 30px;
     }
-    .icon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .icon img {
-      width: 80px;
-      margin-bottom: 10px;
-    }
-    @media screen and (max-width: 600px) {
-      .icons {
-        flex-direction: column;
-        gap: 30px;
-      }
+
+    .icons img {
+      width: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img class="logo" src="logo.png" alt="TourX Logo"/>
-    <h1>COMPETE. <span>WIN.</span> EARN.</h1>
-    <p>Join tournaments, prove your skills, and win rewards!</p>
-    <button class="download-btn">Download App</button>
 
-    <div class="icons">
-      <div class="icon">
-        <img src="game-icon.png" alt="Game Icon"/>
-        <p>Game</p>
-      </div>
-      <div class="icon">
-        <img src="coin-icon.png" alt="Coin Icon"/>
-        <p>Coin</p>
-      </div>
-    </div>
+  <div class="logo">
+    <img src="logo.png" alt="TourX Logo" width="100">
   </div>
+
+  <div class="title">
+    COMPETE. <span>WIN.</span> EARN.
+  </div>
+
+  <div class="subtitle">
+    Join tournaments, prove your skills, and win rewards!
+  </div>
+
+  <button class="download-btn">Download App</button>
+
+  <div class="icons">
+    <img src="gamepad.png" alt="Gamepad Icon">
+    <img src="coin.png" alt="Coin Icon">
+  </div>
+
 </body>
 </html>
