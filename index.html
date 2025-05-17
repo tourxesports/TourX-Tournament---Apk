@@ -1,111 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TourX | Play To Earn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOURX - Compete. Win. Earn.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
+      box-sizing: border-box;
+    }body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #0d0b25, #02010a);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      overflow: hidden;
-    }
+.logo {
+  width: 100px;
+  margin: 0 auto 20px;
+}
 
-    #loader {
-      border: 6px solid #444;
-      border-top: 6px solid #00ffff;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
 
-    @keyframes spin {
-      to { transform: translate(-50%, -50%) rotate(360deg); }
-    }
+.title span {
+  color: #00e0ff;
+}
 
-    .content {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      animation: fadeIn 0.5s ease forwards;
-      padding: 20px;
-    }
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.download-btn {
+  background-color: #00e0ff;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.6);
+  transition: transform 0.3s;
+  display: inline-block;
+  margin-bottom: 40px;
+}
 
-    img {
-      max-width: 180px;
-      margin-bottom: 20px;
-    }
+.download-btn:hover {
+  transform: scale(1.05);
+}
 
-    h1 {
-      font-size: 2em;
-      color: #00ffff;
-      margin-bottom: 20px;
-    }
+.icons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-    a.button {
-      background: #00ffff;
-      color: #000;
-      padding: 14px 32px;
-      border-radius: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 15px #00ffff88;
-      transition: 0.3s ease;
-    }
+.icons img {
+  width: 60px;
+}
 
-    a.button:hover {
-      background: #00e6e6;
-      transform: scale(1.05);
-    }
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5em;
-      }
+  .subtitle {
+    font-size: 16px;
+  }
 
-      a.button {
-        padding: 12px 24px;
-      }
-    }
+  .icons img {
+    width: 50px;
+  }
+}
+
   </style>
 </head>
 <body>
-  <div id="loader"></div>
-
-  <div class="content" id="main-content">
-    <img src="logo.png" alt="TourX Logo">
-    <h1>Play To Earn</h1>
-    <a class="button" href="TourX ESports.apk" download>Download App</a>
+  <img src="logo.png" alt="TourX Logo" class="logo" />
+  <h1 class="title">COMPETE. <span>WIN.</span> EARN.</h1>
+  <p class="subtitle">Join tournaments, prove your skills, and win rewards!</p>
+  <a class="download-btn" href="https://tourxesports.com/TourX_Tournament.apk" download>Download App</a>
+  <div class="icons">
+    <img src="gamepad.png" alt="Gamepad" />
+    <img src="coin.png" alt="Coin" />
   </div>
-
-  <script>
-    window.addEventListener('load', () => {
-      document.getElementById('loader').style.display = 'none';
-      document.getElementById('main-content').style.display = 'flex';
-    });
-  </script>
 </body>
 </html>
